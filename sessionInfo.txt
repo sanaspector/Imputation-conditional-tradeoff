@@ -1,0 +1,20 @@
+R version and package versions used to produce the results in the paper.
+
+R version 4.3.3 (2024-02-29)
+
+Core analysis packages:
+  mice            3.16.0
+  glmnet          4.1.8
+  randomForest    4.7.1.1
+  pROC            1.18.5
+  geometry        0.5.0       (used for convex-hull plausibility metric)
+  dplyr           1.1.4       (data manipulation)
+
+Platform notes:
+  - Pipelines run on Linux (Ubuntu 24.04) and Windows; results are identical.
+  - Set.seed(s) for s in 1:100 reproduces all reported numbers exactly.
+
+Note: package versions listed are those used by the corresponding author for
+the production runs. Slightly newer minor versions are not expected to change
+results, but if exact byte-identical reproduction is required, install the
+versions above (e.g. via `remotes::install_version("mice", "3.16.0")`).
